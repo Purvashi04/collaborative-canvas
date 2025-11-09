@@ -10,10 +10,16 @@ export class RoomManager {
         }
     }
 
-    public addPath(roomId: string, path: any) {
+    addPath(roomId: string, path: any) {
+       if (!this.rooms[roomId]) {
+        // Create room automatically if it doesn’t exist
+          this.rooms[roomId] = { paths: [], history: [] };
+        }
+
         this.rooms[roomId].paths.push(path);
         this.rooms[roomId].history.push([...this.rooms[roomId].paths]);
     }
+
 
     public getState(roomId: string) { return this.rooms[roomId]?.paths || []; }
 
