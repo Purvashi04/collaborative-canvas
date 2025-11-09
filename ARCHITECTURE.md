@@ -9,7 +9,7 @@ This document explains the architecture, data flow, synchronization strategy, an
 **Collaborative Canvas** is a real-time, multi-user drawing board that synchronizes all users’ actions instantly using WebSockets.  
 It supports brush, eraser, color/stroke adjustments, undo/redo, and multiple rooms.
 
-### 🖥️ Tech Stack
+### Tech Stack
 
 | Layer | Technology Used | Purpose |
 |-------|------------------|----------|
@@ -52,20 +52,6 @@ It supports brush, eraser, color/stroke adjustments, undo/redo, and multiple roo
 
 ---
 
-## Undo/Redo Strategy (Global)
-
-Each room maintains a **history stack** of all paths drawn.  
-- Every draw event is pushed to the stack.
-- `undo()` removes the latest path and broadcasts the updated state.
-- `redo()` (if implemented) re-applies previously undone paths.
-
-Room state is stored in:
-```js
-{
-  paths: [],     // current strokes
-  history: []    // stack of all previous states
-}
----
 ## Performance Optimization
 
 ### Off-screen Canvas Rendering
@@ -113,4 +99,4 @@ When multiple users draw in overlapping regions:
 ### Run Locally
 ```bash
 npm install
-npm run dev
+npm run de
