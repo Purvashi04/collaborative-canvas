@@ -65,9 +65,7 @@ Room state is stored in:
   paths: [],     // current strokes
   history: []    // stack of all previous states
 }
-
 ---
-
 ## Performance Optimization
 
 ### Off-screen Canvas Rendering
