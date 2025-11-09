@@ -14,9 +14,20 @@ A real-time multi-user drawing app built with Node.js, Socket.io, and vanilla Ty
 - Enter the same Room ID (e.g., "test") and join.
 - Draw in one tab; see it sync in others.
 
-## Known Limitations
-- Persistence is in-memory (resets on server restart).
-- No user authentication.
+## Live Demo
+The project is deployed on **Render** and can be accessed here:  
+🔗 [https://collaborative-canvas-ccfk.onrender.com](https://collaborative-canvas-ccfk.onrender.com)
 
-## Time Spent
-- 4 days (core: 2 days, bonuses: 1 day, docs/testing: 1 day).
+### How to Test
+1. Open the above link in two browsers or devices.
+2. Enter the same Room ID and click “Join/Create Room”.
+3. Start drawing! You’ll see real-time updates synchronized between clients.
+
+---
+
+## Deployment Details
+- **Platform:** Render
+- **Backend:** Node.js + Express + Socket.io
+- **Frontend:** Vanilla JS + HTML5 Canvas
+- **WebSocket Protocol:** Real-time event-based sync for multi-user drawing
+
