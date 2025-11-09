@@ -1,0 +1,36 @@
+body { 
+  font-family: Arial, sans-serif; 
+  margin: 0; 
+  padding: 0; 
+}
+
+#app { 
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+}
+
+#toolbar { 
+  display: flex; 
+  gap: 10px; 
+  padding: 10px; 
+  background: #f0f0f0; 
+  width: 100%; 
+  justify-content: center; 
+  flex-wrap: wrap; 
+}
+
+#canvas { 
+  border: 1px solid #ccc; 
+  cursor: crosshair; 
+  touch-action: none; 
+} 
+
+#users { 
+  margin-left: 20px; 
+}
+
+#metrics {
+   margin-left: 20px; 
+   color: red; 
+}

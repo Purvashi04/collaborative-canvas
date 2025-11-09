@@ -1,0 +1,32 @@
+{
+  "name": "collaborative-canvas",
+  "version": "1.0.0",
+  "description": "A multi-user collaborative canvas with real-time sync built using Vanilla JS and Socket.io",
+  "author": "Purvashi Kupuli",
+  "type": "module",
+  "main": "server/server.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Purvashi04/collaborative-canvas.git"
+  },
+  "scripts": {
+    "start": "node dist/server/server.js",
+    "build": "npx tsc",
+    "dev": "npx tsc && node dist/server/server.js"
+  },
+  "dependencies": {
+    "@types/socket.io": "^3.0.1",
+    "express": "^4.21.2",
+    "socket.io": "^4.8.1",
+    "socket.io-client": "^4.7.2",
+    "ts-node": "^10.9.2",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.25",
+    "@types/node": "^20.19.24",
+    "@types/socket.io-client": "^1.4.36",
+    "@types/uuid": "^9.0.2",
+    "typescript": "^5.9.3"
+  }
+}
