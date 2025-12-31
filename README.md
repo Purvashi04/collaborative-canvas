@@ -17,6 +17,7 @@ A real-time multi-user drawing app built with Node.js, Socket.io, and vanilla Ty
 ## Live Demo
 The project is deployed on **Render** and can be accessed here:  
 🔗 [https://collaborative-canvas-ccfk.onrender.com](https://collaborative-canvas-ccfk.onrender.com)
+Recorded video: https://drive.google.com/file/d/1Fl86DjNdNzttQNQqg7SenIIrCf0BX4TL/view?usp=drive_link
 
 ### How to Test
 1. Open the above link in two browsers or devices.
